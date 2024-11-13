@@ -1081,25 +1081,6 @@ ivec minbinder(const imat &clus_alloc_chain, mat &psm){
   return best;
 }
 
-ivec VI_LB(const imat C_mat, mat psm_mat){
-  vec result(C_mat.n_rows);
-  double f = 0.0;
-  int n = psm_mat.n_cols;
-  vec tvec(n);
-  for(uword j = 0; j < C_mat.n_rows; j++){
-    f = 0.0;
-    for(int i = 0; i < n; i++){
-      tvec = psm_mat.col(i);
-      f += (log2(accu(C_mat.row(j) == C_mat(j,i))) +
-        log2(accu(tvec)) -
-        2 * log2(accu(tvec.elem(find(C_mat.row(j).t() == C_mat(j,i))))))/n;
-    }
-    result(j) = f;
-    checkUserInterrupt();
-  }
-  ivec best = C_mat.row(index_min(result)).t();
-  return best;
-}
 
 vec compute_freq_entropy(const ivec &cluster_alloc){
   double n_obs = cluster_alloc.n_elem;
@@ -1542,7 +1523,6 @@ List run_mcmc(const mat &data, const vec &type, List &g_params, List &ngg_params
   if (nburn<niter){
     mat psm = get_psm(clusChain.t());
     ivec best_binder = minbinder(clusChain.t(), psm);
-    //ivec best_binder = VI_LB(clusChain.t(), psm);
     result["clus_chain"] = clusChain;
     result["u_chain"] = uchain;
     result["best_clus_binder"] = best_binder;
@@ -1715,7 +1695,6 @@ List run_mcmc_pred_multi(const mat &data, const vec &type, List &g_params, List 
   }
   mat psm = get_psm(clusChain.t());
   ivec best_binder = minbinder(clusChain.t(), psm);
-  //ivec best_binder = VI_LB(clusChain.t(), psm);
   result["clus_chain"] = clusChain;
   result["u_chain"] = uChain;
   result["best_clus_binder"] = best_binder;
