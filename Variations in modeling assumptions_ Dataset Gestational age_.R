@@ -12,7 +12,7 @@ library(readxl)
 #SIM1----
 #Data Generation: (x1,x2)~N, x3~Ber, x4~Ber ; Y ~ N(beta'x, 0.5).
 #Model Assumption: Gaussian Mixture components with unknown means and variances.
-Rcpp::sourceCpp('split_with_g_ngg.cpp')
+Rcpp::sourceCpp('GibbsSampler_SplitandMerge.cpp')
 
 set.seed(123)
 group_1 <- cbind(rmvnorm(n=3775, mean=c(-3,3),sigma= diag(.5, 2)), 
