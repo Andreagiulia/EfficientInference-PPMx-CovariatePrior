@@ -159,7 +159,7 @@ nburn <- 2000
 thinGibbs <- 1
 nGibbs <- 0
 thin <- 1
-itermean <- 5
+itermean <- 50
 g_params <- list(fun = "g0", lambda = 1, alpha = 1, cov = invcov_cont)
 time_g0 <- time_run(as.matrix(data_train), var_type, g_params, ngg_params, P0_params, niter, nburn, thin, itermean, nGibbs, thinGibbs)
 g_params <- list(fun = "g1", lambda = 1, alpha = 1, cov = invcov_cont)
@@ -180,7 +180,7 @@ rownames(time_Gibbs) <- c("g0", "g1", "g2", "g3", "ppmx_n", "ppmx_t")
 
 nGibbs <- 1
 thinGibbs <- 10
-itermean <- 5
+itermean <- 50
 g_params <- list(fun = "g0", lambda = 1, alpha = 1, cov = invcov_cont)
 time_g0 <- time_run(as.matrix(data_train), var_type, g_params, ngg_params, P0_params, niter, nburn, thin, itermean, nGibbs, thinGibbs)
 g_params <- list(fun = "g1", lambda = 1, alpha = 1, cov = invcov_cont)
@@ -200,7 +200,7 @@ rownames(time_Split_1_10) <- c("g0", "g1", "g2", "g3", "ppmx_n", "ppmx_t")
 
 nGibbs <- 0
 thinGibbs <- 10
-itermean <- 5
+itermean <- 50
 g_params <- list(fun = "g0", lambda = 1, alpha = 1, cov = invcov_cont)
 time_g0 <- time_run(as.matrix(data_train), var_type, g_params, ngg_params, P0_params, niter, nburn, thin, itermean, nGibbs, thinGibbs)
 g_params <- list(fun = "g1", lambda = 1, alpha = 1, cov = invcov_cont)
@@ -220,7 +220,7 @@ rownames(time_Split_0_10) <- c("g0", "g1", "g2", "g3", "ppmx_n", "ppmx_t")
 
 nGibbs <- 0
 thinGibbs <- 5
-itermean <- 5
+itermean <- 50
 g_params <- list(fun = "g0", lambda = 1, alpha = 1, cov = invcov_cont)
 time_g0 <- time_run(as.matrix(data_train), var_type, g_params, ngg_params, P0_params, niter, nburn, thin, itermean, nGibbs, thinGibbs)
 g_params <- list(fun = "g1", lambda = 1, alpha = 1, cov = invcov_cont)
@@ -303,7 +303,7 @@ thin <- 1
 
 nGibbs <- 0
 thinGibbs <- 1
-itermean <- 30
+itermean <- 500
 g_params <- list(fun = "g0", lambda = 1, alpha = 1, cov = invcov_cont)
 metrics_0 <- compute_metrics(as.matrix(data_train), clusters_train, var_type, grid_y1, grid_y2,
                              g_params, ngg_params, P0_params, niter, nburn, thin, itermean, nGibbs, thinGibbs,
@@ -339,7 +339,7 @@ rownames(comb_Gibbs) <- c("g0", "g1", "g2", "g3", "ppmx_n", "ppmx_t")
 
 nGibbs <- 1
 thinGibbs <- 10
-itermean <- 30
+itermean <- 500
 g_params <- list(fun = "g0", lambda = 1, alpha = 1, cov = invcov_cont)
 metrics_0 <- compute_metrics(as.matrix(data_train), clusters_train, var_type, grid_y1, grid_y2,
                              g_params, ngg_params, P0_params, niter, nburn, thin, itermean, nGibbs, thinGibbs,
@@ -375,7 +375,7 @@ rownames(comb_Split_1_10) <- c("g0", "g1", "g2", "g3", "ppmx_n", "ppmx_t")
 
 nGibbs <- 0
 thinGibbs <- 5
-itermean <- 30
+itermean <- 500
 g_params <- list(fun = "g0", lambda = 1, alpha = 1, cov = invcov_cont)
 metrics_0 <- compute_metrics(as.matrix(data_train), clusters_train, var_type, grid_y1, grid_y2,
                              g_params, ngg_params, P0_params, niter, nburn, thin, itermean, nGibbs, thinGibbs,
@@ -411,7 +411,7 @@ rownames(comb_Split_0_5) <- c("g0", "g1", "g2", "g3", "ppmx_n", "ppmx_t")
 
 nGibbs <- 0
 thinGibbs <- 10
-itermean <- 30
+itermean <- 500
 g_params <- list(fun = "g0", lambda = 1, alpha = 1, cov = invcov_cont)
 metrics_0 <- compute_metrics(as.matrix(data_train), clusters_train, var_type, grid_y1, grid_y2,
                              g_params, ngg_params, P0_params, niter, nburn, thin, itermean, nGibbs, thinGibbs,
@@ -597,7 +597,7 @@ nburn <- 2000
 thinGibbs <- 1
 nGibbs <- 0
 thin <- 1
-itermean <- 5
+itermean <- 50
 g_params <- list(fun = "g0", lambda = 1, alpha = 1, cov = invcov_cont)
 time_g0 <- time_run(as.matrix(data_train), var_type, g_params, ngg_params, P0_params, niter, nburn, thin, itermean, nGibbs, thinGibbs)
 g_params <- list(fun = "g1", lambda = 1, alpha = 1, cov = invcov_cont)
@@ -618,7 +618,7 @@ rownames(time_Gibbs) <- c("g0", "g1", "g2", "g3", "ppmx_n", "ppmx_t")
 
 nGibbs <- 1
 thinGibbs <- 10
-itermean <- 5
+itermean <- 50
 g_params <- list(fun = "g0", lambda = 1, alpha = 1, cov = invcov_cont)
 time_g0 <- time_run(as.matrix(data_train), var_type, g_params, ngg_params, P0_params, niter, nburn, thin, itermean, nGibbs, thinGibbs)
 g_params <- list(fun = "g1", lambda = 1, alpha = 1, cov = invcov_cont)
@@ -638,7 +638,7 @@ rownames(time_Split_1_10) <- c("g0", "g1", "g2", "g3", "ppmx_n", "ppmx_t")
 
 nGibbs <- 0
 thinGibbs <- 10
-itermean <- 5
+itermean <- 50
 g_params <- list(fun = "g0", lambda = 1, alpha = 1, cov = invcov_cont)
 time_g0 <- time_run(as.matrix(data_train), var_type, g_params, ngg_params, P0_params, niter, nburn, thin, itermean, nGibbs, thinGibbs)
 g_params <- list(fun = "g1", lambda = 1, alpha = 1, cov = invcov_cont)
@@ -658,7 +658,7 @@ rownames(time_Split_0_10) <- c("g0", "g1", "g2", "g3", "ppmx_n", "ppmx_t")
 
 nGibbs <- 0
 thinGibbs <- 5
-itermean <- 5
+itermean <- 50
 g_params <- list(fun = "g0", lambda = 1, alpha = 1, cov = invcov_cont)
 time_g0 <- time_run(as.matrix(data_train), var_type, g_params, ngg_params, P0_params, niter, nburn, thin, itermean, nGibbs, thinGibbs)
 g_params <- list(fun = "g1", lambda = 1, alpha = 1, cov = invcov_cont)
@@ -741,7 +741,7 @@ thin <- 1
 
 nGibbs <- 0
 thinGibbs <- 1
-itermean <- 30
+itermean <- 500
 g_params <- list(fun = "g0", lambda = 1, alpha = 1, cov = invcov_cont)
 metrics_0 <- compute_metrics(as.matrix(data_train), clusters_train, var_type, grid_y1, grid_y2,
                              g_params, ngg_params, P0_params, niter, nburn, thin, itermean, nGibbs, thinGibbs,
@@ -777,7 +777,7 @@ rownames(comb_Gibbs) <- c("g0", "g1", "g2", "g3", "ppmx_n", "ppmx_t")
 
 nGibbs <- 1
 thinGibbs <- 10
-itermean <- 30
+itermean <- 500
 g_params <- list(fun = "g0", lambda = 1, alpha = 1, cov = invcov_cont)
 metrics_0 <- compute_metrics(as.matrix(data_train), clusters_train, var_type, grid_y1, grid_y2,
                              g_params, ngg_params, P0_params, niter, nburn, thin, itermean, nGibbs, thinGibbs,
@@ -813,7 +813,7 @@ rownames(comb_Split_1_10) <- c("g0", "g1", "g2", "g3", "ppmx_n", "ppmx_t")
 
 nGibbs <- 0
 thinGibbs <- 5
-itermean <- 30
+itermean <- 500
 g_params <- list(fun = "g0", lambda = 1, alpha = 1, cov = invcov_cont)
 metrics_0 <- compute_metrics(as.matrix(data_train), clusters_train, var_type, grid_y1, grid_y2,
                              g_params, ngg_params, P0_params, niter, nburn, thin, itermean, nGibbs, thinGibbs,
@@ -849,7 +849,7 @@ rownames(comb_Split_0_5) <- c("g0", "g1", "g2", "g3", "ppmx_n", "ppmx_t")
 
 nGibbs <- 0
 thinGibbs <- 10
-itermean <- 30
+itermean <- 500
 g_params <- list(fun = "g0", lambda = 1, alpha = 1, cov = invcov_cont)
 metrics_0 <- compute_metrics(as.matrix(data_train), clusters_train, var_type, grid_y1, grid_y2,
                              g_params, ngg_params, P0_params, niter, nburn, thin, itermean, nGibbs, thinGibbs,
@@ -1039,7 +1039,7 @@ nburn <- 2000
 thinGibbs <- 1
 nGibbs <- 0
 thin <- 1
-itermean <- 5
+itermean <- 50
 g_params <- list(fun = "g0", lambda = 1, alpha = 1, cov = invcov_cont)
 time_g0 <- time_run(as.matrix(data_train), var_type, g_params, ngg_params, P0_params, niter, nburn, thin, itermean, nGibbs, thinGibbs)
 g_params <- list(fun = "g1", lambda = 0.5, alpha = 1, cov = invcov_cont)
@@ -1060,7 +1060,7 @@ rownames(time_Gibbs) <- c("g0", "g1", "g2", "g3", "ppmx_n", "ppmx_t")
 
 nGibbs <- 1
 thinGibbs <- 10
-itermean <- 5
+itermean <- 50
 g_params <- list(fun = "g0", lambda = 1, alpha = 1, cov = invcov_cont)
 time_g0 <- time_run(as.matrix(data_train), var_type, g_params, ngg_params, P0_params, niter, nburn, thin, itermean, nGibbs, thinGibbs)
 g_params <- list(fun = "g1", lambda = 0.5, alpha = 1, cov = invcov_cont)
@@ -1080,7 +1080,7 @@ rownames(time_Split_1_10) <- c("g0", "g1", "g2", "g3", "ppmx_n", "ppmx_t")
 
 nGibbs <- 0
 thinGibbs <- 10
-itermean <- 5
+itermean <- 50
 g_params <- list(fun = "g0", lambda = 1, alpha = 1, cov = invcov_cont)
 time_g0 <- time_run(as.matrix(data_train), var_type, g_params, ngg_params, P0_params, niter, nburn, thin, itermean, nGibbs, thinGibbs)
 g_params <- list(fun = "g1", lambda = 0.5, alpha = 1, cov = invcov_cont)
@@ -1100,7 +1100,7 @@ rownames(time_Split_0_10) <- c("g0", "g1", "g2", "g3", "ppmx_n", "ppmx_t")
 
 nGibbs <- 0
 thinGibbs <- 5
-itermean <- 5
+itermean <- 50
 g_params <- list(fun = "g0", lambda = 1, alpha = 1, cov = invcov_cont)
 time_g0 <- time_run(as.matrix(data_train), var_type, g_params, ngg_params, P0_params, niter, nburn, thin, itermean, nGibbs, thinGibbs)
 g_params <- list(fun = "g1", lambda = 0.5, alpha = 1, cov = invcov_cont)
@@ -1183,7 +1183,7 @@ thin <- 1
 
 nGibbs <- 0
 thinGibbs <- 1
-itermean <- 30
+itermean <- 500
 g_params <- list(fun = "g0", lambda = 1, alpha = 1, cov = invcov_cont)
 metrics_0 <- compute_metrics(as.matrix(data_train), clusters_train, var_type, grid_y1, grid_y2,
                              g_params, ngg_params, P0_params, niter, nburn, thin, itermean, nGibbs, thinGibbs,
@@ -1220,7 +1220,7 @@ rownames(comb_Gibbs) <- c("g0", "g1", "g2", "g3", "ppmx_n", "ppmx_t")
 
 nGibbs <- 1
 thinGibbs <- 10
-itermean <- 30
+itermean <- 500
 g_params <- list(fun = "g0", lambda = 1, alpha = 1, cov = invcov_cont)
 metrics_0 <- compute_metrics(as.matrix(data_train), clusters_train, var_type, grid_y1, grid_y2,
                              g_params, ngg_params, P0_params, niter, nburn, thin, itermean, nGibbs, thinGibbs,
@@ -1257,7 +1257,7 @@ rownames(comb_Split_1_10) <- c("g0", "g1", "g2", "g3", "ppmx_n", "ppmx_t")
 
 nGibbs <- 0
 thinGibbs <- 5
-itermean <- 30
+itermean <- 500
 g_params <- list(fun = "g0", lambda = 1, alpha = 1, cov = invcov_cont)
 metrics_0 <- compute_metrics(as.matrix(data_train), clusters_train, var_type, grid_y1, grid_y2,
                              g_params, ngg_params, P0_params, niter, nburn, thin, itermean, nGibbs, thinGibbs,
@@ -1294,7 +1294,7 @@ rownames(comb_Split_0_5) <- c("g0", "g1", "g2", "g3", "ppmx_n", "ppmx_t")
 
 nGibbs <- 0
 thinGibbs <- 10
-itermean <- 30
+itermean <- 500
 g_params <- list(fun = "g0", lambda = 1, alpha = 1, cov = invcov_cont)
 metrics_0 <- compute_metrics(as.matrix(data_train), clusters_train, var_type, grid_y1, grid_y2,
                              g_params, ngg_params, P0_params, niter, nburn, thin, itermean, nGibbs, thinGibbs,
@@ -1334,7 +1334,7 @@ nburn <- 2000
 thinGibbs <- 1
 nGibbs <- 0
 thin <- 1
-itermean <- 5
+itermean <- 50
 g_params <- list(fun = "g0", lambda = 1, alpha = 1, cov = invcov_cont)
 time_g0 <- time_run(as.matrix(data_train), var_type, g_params, ngg_params, P0_params, niter, nburn, thin, itermean, nGibbs, thinGibbs)
 g_params <- list(fun = "g1", lambda = 0.5, alpha = 1, cov = invcov_cont)
@@ -1355,7 +1355,7 @@ rownames(time_Gibbs) <- c("g0", "g1", "g2", "g3", "ppmx_n", "ppmx_t")
 
 nGibbs <- 1
 thinGibbs <- 10
-itermean <- 5
+itermean <- 50
 g_params <- list(fun = "g0", lambda = 1, alpha = 1, cov = invcov_cont)
 time_g0 <- time_run(as.matrix(data_train), var_type, g_params, ngg_params, P0_params, niter, nburn, thin, itermean, nGibbs, thinGibbs)
 g_params <- list(fun = "g1", lambda = 0.5, alpha = 1, cov = invcov_cont)
@@ -1375,7 +1375,7 @@ rownames(time_Split_1_10) <- c("g0", "g1", "g2", "g3", "ppmx_n", "ppmx_t")
 
 nGibbs <- 0
 thinGibbs <- 10
-itermean <- 5
+itermean <- 50
 g_params <- list(fun = "g0", lambda = 1, alpha = 1, cov = invcov_cont)
 time_g0 <- time_run(as.matrix(data_train), var_type, g_params, ngg_params, P0_params, niter, nburn, thin, itermean, nGibbs, thinGibbs)
 g_params <- list(fun = "g1", lambda = 0.5, alpha = 1, cov = invcov_cont)
@@ -1395,7 +1395,7 @@ rownames(time_Split_0_10) <- c("g0", "g1", "g2", "g3", "ppmx_n", "ppmx_t")
 
 nGibbs <- 0
 thinGibbs <- 5
-itermean <- 5
+itermean <- 50
 g_params <- list(fun = "g0", lambda = 1, alpha = 1, cov = invcov_cont)
 time_g0 <- time_run(as.matrix(data_train), var_type, g_params, ngg_params, P0_params, niter, nburn, thin, itermean, nGibbs, thinGibbs)
 g_params <- list(fun = "g1", lambda = 0.5, alpha = 1, cov = invcov_cont)
@@ -1604,7 +1604,7 @@ nburn <- 2000
 thinGibbs <- 1
 nGibbs <- 0
 thin <- 1
-itermean <- 5
+itermean <- 50
 g_params <- list(fun = "g0", lambda = 1, alpha = 1, cov = invcov_cont)
 time_g0 <- time_run(as.matrix(data_train), var_type, g_params, ngg_params, P0_params, niter, nburn, thin, itermean, nGibbs, thinGibbs)
 g_params <- list(fun = "g1", lambda = 0.5, alpha = 1, cov = invcov_cont)
@@ -1625,7 +1625,7 @@ rownames(time_Gibbs) <- c("g0", "g1", "g2", "g3", "ppmx_n", "ppmx_t")
 
 nGibbs <- 1
 thinGibbs <- 10
-itermean <- 5
+itermean <- 50
 g_params <- list(fun = "g0", lambda = 1, alpha = 1, cov = invcov_cont)
 time_g0 <- time_run(as.matrix(data_train), var_type, g_params, ngg_params, P0_params, niter, nburn, thin, itermean, nGibbs, thinGibbs)
 g_params <- list(fun = "g1", lambda = 0.5, alpha = 1, cov = invcov_cont)
@@ -1645,7 +1645,7 @@ rownames(time_Split_1_10) <- c("g0", "g1", "g2", "g3", "ppmx_n", "ppmx_t")
 
 nGibbs <- 0
 thinGibbs <- 10
-itermean <- 5
+itermean <- 50
 g_params <- list(fun = "g0", lambda = 1, alpha = 1, cov = invcov_cont)
 time_g0 <- time_run(as.matrix(data_train), var_type, g_params, ngg_params, P0_params, niter, nburn, thin, itermean, nGibbs, thinGibbs)
 g_params <- list(fun = "g1", lambda = 0.5, alpha = 1, cov = invcov_cont)
@@ -1665,7 +1665,7 @@ rownames(time_Split_0_10) <- c("g0", "g1", "g2", "g3", "ppmx_n", "ppmx_t")
 
 nGibbs <- 0
 thinGibbs <- 5
-itermean <- 5
+itermean <- 50
 g_params <- list(fun = "g0", lambda = 1, alpha = 1, cov = invcov_cont)
 time_g0 <- time_run(as.matrix(data_train), var_type, g_params, ngg_params, P0_params, niter, nburn, thin, itermean, nGibbs, thinGibbs)
 g_params <- list(fun = "g1", lambda = 0.5, alpha = 1, cov = invcov_cont)
@@ -1748,7 +1748,7 @@ thin <- 1
 
 nGibbs <- 0
 thinGibbs <- 1
-itermean <- 30
+itermean <- 500
 g_params <- list(fun = "g0", lambda = 1, alpha = 1, cov = invcov_cont)
 metrics_0 <- compute_metrics(as.matrix(data_train), clusters_train, var_type, grid_y1, grid_y2,
                              g_params, ngg_params, P0_params, niter, nburn, thin, itermean, nGibbs, thinGibbs,
@@ -1785,7 +1785,7 @@ rownames(comb_Gibbs) <- c("g0", "g1", "g2", "g3", "ppmx_n", "ppmx_t")
 
 nGibbs <- 1
 thinGibbs <- 10
-itermean <- 30
+itermean <- 500
 g_params <- list(fun = "g0", lambda = 1, alpha = 1, cov = invcov_cont)
 metrics_0 <- compute_metrics(as.matrix(data_train), clusters_train, var_type, grid_y1, grid_y2,
                              g_params, ngg_params, P0_params, niter, nburn, thin, itermean, nGibbs, thinGibbs,
@@ -1822,7 +1822,7 @@ rownames(comb_Split_1_10) <- c("g0", "g1", "g2", "g3", "ppmx_n", "ppmx_t")
 
 nGibbs <- 0
 thinGibbs <- 5
-itermean <- 30
+itermean <- 500
 g_params <- list(fun = "g0", lambda = 1, alpha = 1, cov = invcov_cont)
 metrics_0 <- compute_metrics(as.matrix(data_train), clusters_train, var_type, grid_y1, grid_y2,
                              g_params, ngg_params, P0_params, niter, nburn, thin, itermean, nGibbs, thinGibbs,
@@ -1859,7 +1859,7 @@ rownames(comb_Split_0_5) <- c("g0", "g1", "g2", "g3", "ppmx_n", "ppmx_t")
 
 nGibbs <- 0
 thinGibbs <- 10
-itermean <- 30
+itermean <- 500
 g_params <- list(fun = "g0", lambda = 1, alpha = 1, cov = invcov_cont)
 metrics_0 <- compute_metrics(as.matrix(data_train), clusters_train, var_type, grid_y1, grid_y2,
                              g_params, ngg_params, P0_params, niter, nburn, thin, itermean, nGibbs, thinGibbs,
@@ -1900,7 +1900,7 @@ nburn <- 2000
 thinGibbs <- 1
 nGibbs <- 0
 thin <- 1
-itermean <- 5
+itermean <- 50
 g_params <- list(fun = "g0", lambda = 1, alpha = 1, cov = invcov_cont)
 time_g0 <- time_run(as.matrix(data_train), var_type, g_params, ngg_params, P0_params, niter, nburn, thin, itermean, nGibbs, thinGibbs)
 g_params <- list(fun = "g1", lambda = 0.5, alpha = 1, cov = invcov_cont)
@@ -1921,7 +1921,7 @@ rownames(time_Gibbs) <- c("g0", "g1", "g2", "g3", "ppmx_n", "ppmx_t")
 
 nGibbs <- 1
 thinGibbs <- 10
-itermean <- 5
+itermean <- 50
 g_params <- list(fun = "g0", lambda = 1, alpha = 1, cov = invcov_cont)
 time_g0 <- time_run(as.matrix(data_train), var_type, g_params, ngg_params, P0_params, niter, nburn, thin, itermean, nGibbs, thinGibbs)
 g_params <- list(fun = "g1", lambda = 0.5, alpha = 1, cov = invcov_cont)
@@ -1941,7 +1941,7 @@ rownames(time_Split_1_10) <- c("g0", "g1", "g2", "g3", "ppmx_n", "ppmx_t")
 
 nGibbs <- 0
 thinGibbs <- 10
-itermean <- 5
+itermean <- 50
 g_params <- list(fun = "g0", lambda = 1, alpha = 1, cov = invcov_cont)
 time_g0 <- time_run(as.matrix(data_train), var_type, g_params, ngg_params, P0_params, niter, nburn, thin, itermean, nGibbs, thinGibbs)
 g_params <- list(fun = "g1", lambda = 0.5, alpha = 1, cov = invcov_cont)
@@ -1961,7 +1961,7 @@ rownames(time_Split_0_10) <- c("g0", "g1", "g2", "g3", "ppmx_n", "ppmx_t")
 
 nGibbs <- 0
 thinGibbs <- 5
-itermean <- 5
+itermean <- 50
 g_params <- list(fun = "g0", lambda = 1, alpha = 1, cov = invcov_cont)
 time_g0 <- time_run(as.matrix(data_train), var_type, g_params, ngg_params, P0_params, niter, nburn, thin, itermean, nGibbs, thinGibbs)
 g_params <- list(fun = "g1", lambda = 0.5, alpha = 1, cov = invcov_cont)
@@ -2166,7 +2166,7 @@ nburn <- 2000
 thinGibbs <- 1
 nGibbs <- 0
 thin <- 1
-itermean <- 5
+itermean <- 50
 g_params <- list(fun = "g0", lambda = 1, alpha = 1, cov = invcov_cont)
 time_g0 <- time_run(as.matrix(data_train), var_type, g_params, ngg_params, P0_params, niter, nburn, thin, itermean, nGibbs, thinGibbs)
 g_params <- list(fun = "g1", lambda = 1, alpha = 1, cov = invcov_cont)
@@ -2187,7 +2187,7 @@ rownames(time_Gibbs) <- c("g0", "g1", "g2", "g3", "ppmx_n", "ppmx_t")
 
 nGibbs <- 1
 thinGibbs <- 10
-itermean <- 5
+itermean <- 50
 g_params <- list(fun = "g0", lambda = 1, alpha = 1, cov = invcov_cont)
 time_g0 <- time_run(as.matrix(data_train), var_type, g_params, ngg_params, P0_params, niter, nburn, thin, itermean, nGibbs, thinGibbs)
 g_params <- list(fun = "g1", lambda = 1, alpha = 1, cov = invcov_cont)
@@ -2207,7 +2207,7 @@ rownames(time_Split_1_10) <- c("g0", "g1", "g2", "g3", "ppmx_n", "ppmx_t")
 
 nGibbs <- 0
 thinGibbs <- 10
-itermean <- 5
+itermean <- 50
 g_params <- list(fun = "g0", lambda = 1, alpha = 1, cov = invcov_cont)
 time_g0 <- time_run(as.matrix(data_train), var_type, g_params, ngg_params, P0_params, niter, nburn, thin, itermean, nGibbs, thinGibbs)
 g_params <- list(fun = "g1", lambda = 1, alpha = 1, cov = invcov_cont)
@@ -2227,7 +2227,7 @@ rownames(time_Split_0_10) <- c("g0", "g1", "g2", "g3", "ppmx_n", "ppmx_t")
 
 nGibbs <- 0
 thinGibbs <- 5
-itermean <- 5
+itermean <- 50
 g_params <- list(fun = "g0", lambda = 1, alpha = 1, cov = invcov_cont)
 time_g0 <- time_run(as.matrix(data_train), var_type, g_params, ngg_params, P0_params, niter, nburn, thin, itermean, nGibbs, thinGibbs)
 g_params <- list(fun = "g1", lambda = 0.7, alpha = 1, cov = invcov_cont)
@@ -2310,7 +2310,7 @@ thin <- 1
 
 nGibbs <- 0
 thinGibbs <- 1
-itermean <- 30
+itermean <- 500
 g_params <- list(fun = "g0", lambda = 1, alpha = 1, cov = invcov_cont)
 metrics_0 <- compute_metrics(as.matrix(data_train), clusters_train, var_type, grid_y1, grid_y2,
                              g_params, ngg_params, P0_params, niter, nburn, thin, itermean, nGibbs, thinGibbs,
@@ -2348,7 +2348,7 @@ rownames(comb_Gibbs) <- c("g0", "g1", "g2", "g3", "ppmx_n", "ppmx_t")
 
 nGibbs <- 1
 thinGibbs <- 10
-itermean <- 30
+itermean <- 500
 g_params <- list(fun = "g0", lambda = 1, alpha = 1, cov = invcov_cont)
 metrics_0 <- compute_metrics(as.matrix(data_train), clusters_train, var_type, grid_y1, grid_y2,
                              g_params, ngg_params, P0_params, niter, nburn, thin, itermean, nGibbs, thinGibbs,
@@ -2385,7 +2385,7 @@ rownames(comb_Split_1_10) <- c("g0", "g1", "g2", "g3", "ppmx_n", "ppmx_t")
 
 nGibbs <- 0
 thinGibbs <- 5
-itermean <- 30
+itermean <- 500
 g_params <- list(fun = "g0", lambda = 1, alpha = 1, cov = invcov_cont)
 metrics_0 <- compute_metrics(as.matrix(data_train), clusters_train, var_type, grid_y1, grid_y2,
                              g_params, ngg_params, P0_params, niter, nburn, thin, itermean, nGibbs, thinGibbs,
@@ -2422,7 +2422,7 @@ rownames(comb_Split_0_5) <- c("g0", "g1", "g2", "g3", "ppmx_n", "ppmx_t")
 
 nGibbs <- 0
 thinGibbs <- 10
-itermean <- 30
+itermean <- 500
 g_params <- list(fun = "g0", lambda = 1, alpha = 1, cov = invcov_cont)
 metrics_0 <- compute_metrics(as.matrix(data_train), clusters_train, var_type, grid_y1, grid_y2,
                              g_params, ngg_params, P0_params, niter, nburn, thin, itermean, nGibbs, thinGibbs,
@@ -2463,7 +2463,7 @@ nburn <- 2000
 thinGibbs <- 1
 nGibbs <- 0
 thin <- 1
-itermean <- 5
+itermean <- 50
 g_params <- list(fun = "g0", lambda = 1, alpha = 1, cov = invcov_cont)
 time_g0 <- time_run(as.matrix(data_train), var_type, g_params, ngg_params, P0_params, niter, nburn, thin, itermean, nGibbs, thinGibbs)
 g_params <- list(fun = "g1", lambda = 1, alpha = 1, cov = invcov_cont)
@@ -2484,7 +2484,7 @@ rownames(time_Gibbs) <- c("g0", "g1", "g2", "g3", "ppmx_n", "ppmx_t")
 
 nGibbs <- 1
 thinGibbs <- 10
-itermean <- 5
+itermean <- 50
 g_params <- list(fun = "g0", lambda = 1, alpha = 1, cov = invcov_cont)
 time_g0 <- time_run(as.matrix(data_train), var_type, g_params, ngg_params, P0_params, niter, nburn, thin, itermean, nGibbs, thinGibbs)
 g_params <- list(fun = "g1", lambda = 1, alpha = 1, cov = invcov_cont)
@@ -2504,7 +2504,7 @@ rownames(time_Split_1_10) <- c("g0", "g1", "g2", "g3", "ppmx_n", "ppmx_t")
 
 nGibbs <- 0
 thinGibbs <- 10
-itermean <- 5
+itermean <- 50
 g_params <- list(fun = "g0", lambda = 1, alpha = 1, cov = invcov_cont)
 time_g0 <- time_run(as.matrix(data_train), var_type, g_params, ngg_params, P0_params, niter, nburn, thin, itermean, nGibbs, thinGibbs)
 g_params <- list(fun = "g1", lambda = 1, alpha = 1, cov = invcov_cont)
@@ -2524,7 +2524,7 @@ rownames(time_Split_0_10) <- c("g0", "g1", "g2", "g3", "ppmx_n", "ppmx_t")
 
 nGibbs <- 0
 thinGibbs <- 5
-itermean <- 5
+itermean <- 50
 g_params <- list(fun = "g0", lambda = 1, alpha = 1, cov = invcov_cont)
 time_g0 <- time_run(as.matrix(data_train), var_type, g_params, ngg_params, P0_params, niter, nburn, thin, itermean, nGibbs, thinGibbs)
 g_params <- list(fun = "g1", lambda = 0.7, alpha = 1, cov = invcov_cont)
@@ -2718,7 +2718,7 @@ nburn <- 2000
 thinGibbs <- 1
 nGibbs <- 0
 thin <- 1
-itermean <- 5
+itermean <- 50
 g_params <- list(fun = "g0", lambda = 1, alpha = 1, cov = invcov_cont)
 time_g0 <- time_run(as.matrix(data_train), var_type, g_params, ngg_params, P0_params, niter, nburn, thin, itermean, nGibbs, thinGibbs)
 g_params <- list(fun = "g1", lambda = 0.2, alpha = 1, cov = invcov_cont)
@@ -2739,7 +2739,7 @@ rownames(time_Gibbs) <- c("g0", "g1", "g2", "g3", "ppmx_n", "ppmx_t")
 
 nGibbs <- 1
 thinGibbs <- 10
-itermean <- 5
+itermean <- 50
 g_params <- list(fun = "g0", lambda = 1, alpha = 1, cov = invcov_cont)
 time_g0 <- time_run(as.matrix(data_train), var_type, g_params, ngg_params, P0_params, niter, nburn, thin, itermean, nGibbs, thinGibbs)
 g_params <- list(fun = "g1", lambda = 0.2, alpha = 1, cov = invcov_cont)
@@ -2759,7 +2759,7 @@ rownames(time_Split_1_10) <- c("g0", "g1", "g2", "g3", "ppmx_n", "ppmx_t")
 
 nGibbs <- 0
 thinGibbs <- 10
-itermean <- 5
+itermean <- 50
 g_params <- list(fun = "g0", lambda = 1, alpha = 1, cov = invcov_cont)
 time_g0 <- time_run(as.matrix(data_train), var_type, g_params, ngg_params, P0_params, niter, nburn, thin, itermean, nGibbs, thinGibbs)
 g_params <- list(fun = "g1", lambda = 0.2, alpha = 1, cov = invcov_cont)
@@ -2779,7 +2779,7 @@ rownames(time_Split_0_10) <- c("g0", "g1", "g2", "g3", "ppmx_n", "ppmx_t")
 
 nGibbs <- 0
 thinGibbs <- 5
-itermean <- 5
+itermean <- 50
 g_params <- list(fun = "g0", lambda = 1, alpha = 1, cov = invcov_cont)
 time_g0 <- time_run(as.matrix(data_train), var_type, g_params, ngg_params, P0_params, niter, nburn, thin, itermean, nGibbs, thinGibbs)
 g_params <- list(fun = "g1", lambda = 0.2, alpha = 1, cov = invcov_cont)
@@ -2981,7 +2981,7 @@ nburn <- 2000
 thinGibbs <- 1
 nGibbs <- 0
 thin <- 1
-itermean <- 5
+itermean <- 50
 g_params <- list(fun = "g0", lambda = 1, alpha = 1, cov = invcov_cont)
 time_g0 <- time_run(as.matrix(data_train), var_type, g_params, ngg_params, P0_params, niter, nburn, thin, itermean, nGibbs, thinGibbs)
 g_params <- list(fun = "g1", lambda = 0.2, alpha = 1, cov = invcov_cont)
@@ -2998,7 +2998,7 @@ rownames(time_Gibbs) <- c("g0", "g1", "g2", "g3")
 
 nGibbs <- 1
 thinGibbs <- 10
-itermean <- 5
+itermean <- 50
 g_params <- list(fun = "g0", lambda = 1, alpha = 1, cov = invcov_cont)
 time_g0 <- time_run(as.matrix(data_train), var_type, g_params, ngg_params, P0_params, niter, nburn, thin, itermean, nGibbs, thinGibbs)
 g_params <- list(fun = "g1", lambda = 0.2, alpha = 1, cov = invcov_cont)
@@ -3014,7 +3014,7 @@ rownames(time_Split_1_10) <- c("g0", "g1", "g2", "g3")
 
 nGibbs <- 0
 thinGibbs <- 10
-itermean <- 5
+itermean <- 50
 g_params <- list(fun = "g0", lambda = 1, alpha = 1, cov = invcov_cont)
 time_g0 <- time_run(as.matrix(data_train), var_type, g_params, ngg_params, P0_params, niter, nburn, thin, itermean, nGibbs, thinGibbs)
 g_params <- list(fun = "g1", lambda = 0.2, alpha = 1, cov = invcov_cont)
@@ -3030,7 +3030,7 @@ rownames(time_Split_0_10) <- c("g0", "g1", "g2", "g3")
 
 nGibbs <- 0
 thinGibbs <- 5
-itermean <- 5
+itermean <- 50
 g_params <- list(fun = "g0", lambda = 1, alpha = 1, cov = invcov_cont)
 time_g0 <- time_run(as.matrix(data_train), var_type, g_params, ngg_params, P0_params, niter, nburn, thin, itermean, nGibbs, thinGibbs)
 g_params <- list(fun = "g1", lambda = 0.2, alpha = 1, cov = invcov_cont)
@@ -3217,7 +3217,7 @@ nburn <- 2000
 thinGibbs <- 1
 nGibbs <- 0
 thin <- 1
-itermean <- 5
+itermean <- 50
 g_params <- list(fun = "g0", lambda = 1, alpha = 1, cov = invcov_cont)
 time_g0 <- time_run(as.matrix(data_train), var_type, g_params, ngg_params, P0_params, niter, nburn, thin, itermean, nGibbs, thinGibbs)
 g_params <- list(fun = "g1", lambda = 0.5, alpha = 1, cov = invcov_cont)
@@ -3238,7 +3238,7 @@ rownames(time_Gibbs) <- c("g0", "g1", "g2", "g3", "ppmx_n", "ppmx_t")
 
 nGibbs <- 1
 thinGibbs <- 10
-itermean <- 5
+itermean <- 50
 g_params <- list(fun = "g0", lambda = 1, alpha = 1, cov = invcov_cont)
 time_g0 <- time_run(as.matrix(data_train), var_type, g_params, ngg_params, P0_params, niter, nburn, thin, itermean, nGibbs, thinGibbs)
 g_params <- list(fun = "g1", lambda = 0.5, alpha = 1, cov = invcov_cont)
@@ -3258,7 +3258,7 @@ rownames(time_Split_1_10) <- c("g0", "g1", "g2", "g3", "ppmx_n", "ppmx_t")
 
 nGibbs <- 0
 thinGibbs <- 10
-itermean <- 5
+itermean <- 50
 g_params <- list(fun = "g0", lambda = 1, alpha = 1, cov = invcov_cont)
 time_g0 <- time_run(as.matrix(data_train), var_type, g_params, ngg_params, P0_params, niter, nburn, thin, itermean, nGibbs, thinGibbs)
 g_params <- list(fun = "g1", lambda = 0.5, alpha = 1, cov = invcov_cont)
@@ -3278,7 +3278,7 @@ rownames(time_Split_0_10) <- c("g0", "g1", "g2", "g3", "ppmx_n", "ppmx_t")
 
 nGibbs <- 0
 thinGibbs <- 5
-itermean <- 5
+itermean <- 50
 g_params <- list(fun = "g0", lambda = 1, alpha = 1, cov = invcov_cont)
 time_g0 <- time_run(as.matrix(data_train), var_type, g_params, ngg_params, P0_params, niter, nburn, thin, itermean, nGibbs, thinGibbs)
 g_params <- list(fun = "g1", lambda = 0.5, alpha = 1, cov = invcov_cont)
@@ -3361,7 +3361,7 @@ thin <- 1
 
 nGibbs <- 0
 thinGibbs <- 1
-itermean <- 30
+itermean <- 500
 g_params <- list(fun = "g0", lambda = 1, alpha = 1, cov = invcov_cont)
 metrics_0 <- compute_metrics(as.matrix(data_train), clusters_train, var_type, grid_y1, grid_y2,
                              g_params, ngg_params, P0_params, niter, nburn, thin, itermean, nGibbs, thinGibbs,
@@ -3398,7 +3398,7 @@ rownames(comb_Gibbs) <- c("g0", "g1", "g2", "g3", "ppmx_n", "ppmx_t")
 
 nGibbs <- 1
 thinGibbs <- 10
-itermean <- 30
+itermean <- 500
 g_params <- list(fun = "g0", lambda = 1, alpha = 1, cov = invcov_cont)
 metrics_0 <- compute_metrics(as.matrix(data_train), clusters_train, var_type, grid_y1, grid_y2,
                              g_params, ngg_params, P0_params, niter, nburn, thin, itermean, nGibbs, thinGibbs,
@@ -3435,7 +3435,7 @@ rownames(comb_Split_1_10) <- c("g0", "g1", "g2", "g3", "ppmx_n", "ppmx_t")
 
 nGibbs <- 0
 thinGibbs <- 5
-itermean <- 30
+itermean <- 500
 g_params <- list(fun = "g0", lambda = 1, alpha = 1, cov = invcov_cont)
 metrics_0 <- compute_metrics(as.matrix(data_train), clusters_train, var_type, grid_y1, grid_y2,
                              g_params, ngg_params, P0_params, niter, nburn, thin, itermean, nGibbs, thinGibbs,
@@ -3472,7 +3472,7 @@ rownames(comb_Split_0_5) <- c("g0", "g1", "g2", "g3", "ppmx_n", "ppmx_t")
 
 nGibbs <- 0
 thinGibbs <- 10
-itermean <- 30
+itermean <- 500
 g_params <- list(fun = "g0", lambda = 1, alpha = 1, cov = invcov_cont)
 metrics_0 <- compute_metrics(as.matrix(data_train), clusters_train, var_type, grid_y1, grid_y2,
                              g_params, ngg_params, P0_params, niter, nburn, thin, itermean, nGibbs, thinGibbs,
@@ -3512,7 +3512,7 @@ nburn <- 2000
 thinGibbs <- 1
 nGibbs <- 0
 thin <- 1
-itermean <- 5
+itermean <- 50
 g_params <- list(fun = "g0", lambda = 1, alpha = 1, cov = invcov_cont)
 time_g0 <- time_run(as.matrix(data_train), var_type, g_params, ngg_params, P0_params, niter, nburn, thin, itermean, nGibbs, thinGibbs)
 g_params <- list(fun = "g1", lambda = 0.5, alpha = 1, cov = invcov_cont)
@@ -3533,7 +3533,7 @@ rownames(time_Gibbs) <- c("g0", "g1", "g2", "g3", "ppmx_n", "ppmx_t")
 
 nGibbs <- 1
 thinGibbs <- 10
-itermean <- 5
+itermean <- 50
 g_params <- list(fun = "g0", lambda = 1, alpha = 1, cov = invcov_cont)
 time_g0 <- time_run(as.matrix(data_train), var_type, g_params, ngg_params, P0_params, niter, nburn, thin, itermean, nGibbs, thinGibbs)
 g_params <- list(fun = "g1", lambda = 0.5, alpha = 1, cov = invcov_cont)
@@ -3553,7 +3553,7 @@ rownames(time_Split_1_10) <- c("g0", "g1", "g2", "g3", "ppmx_n", "ppmx_t")
 
 nGibbs <- 0
 thinGibbs <- 10
-itermean <- 5
+itermean <- 50
 g_params <- list(fun = "g0", lambda = 1, alpha = 1, cov = invcov_cont)
 time_g0 <- time_run(as.matrix(data_train), var_type, g_params, ngg_params, P0_params, niter, nburn, thin, itermean, nGibbs, thinGibbs)
 g_params <- list(fun = "g1", lambda = 0.5, alpha = 1, cov = invcov_cont)
@@ -3573,7 +3573,7 @@ rownames(time_Split_0_10) <- c("g0", "g1", "g2", "g3", "ppmx_n", "ppmx_t")
 
 nGibbs <- 0
 thinGibbs <- 5
-itermean <- 5
+itermean <- 50
 g_params <- list(fun = "g0", lambda = 1, alpha = 1, cov = invcov_cont)
 time_g0 <- time_run(as.matrix(data_train), var_type, g_params, ngg_params, P0_params, niter, nburn, thin, itermean, nGibbs, thinGibbs)
 g_params <- list(fun = "g1", lambda = 0.5, alpha = 1, cov = invcov_cont)
@@ -3804,7 +3804,7 @@ nburn <- 2000
 thinGibbs <- 1
 nGibbs <- 0
 thin <- 1
-itermean <- 5
+itermean <- 50
 g_params <- list(fun = "g0", lambda = 1, alpha = 1, cov = invcov_cont)
 time_g0 <- time_run(as.matrix(data_train), var_type, g_params, ngg_params, P0_params, niter, nburn, thin, itermean, nGibbs, thinGibbs)
 g_params <- list(fun = "g1", lambda = 1, alpha = 1, cov = invcov_cont)
@@ -3825,7 +3825,7 @@ rownames(time_Gibbs) <- c("g0", "g1", "g2", "g3", "ppmx_n", "ppmx_t")
 
 nGibbs <- 1
 thinGibbs <- 10
-itermean <- 5
+itermean <- 50
 g_params <- list(fun = "g0", lambda = 1, alpha = 1, cov = invcov_cont)
 time_g0 <- time_run(as.matrix(data_train), var_type, g_params, ngg_params, P0_params, niter, nburn, thin, itermean, nGibbs, thinGibbs)
 g_params <- list(fun = "g1", lambda = 1, alpha = 1, cov = invcov_cont)
@@ -3845,7 +3845,7 @@ rownames(time_Split_1_10) <- c("g0", "g1", "g2", "g3", "ppmx_n", "ppmx_t")
 
 nGibbs <- 0
 thinGibbs <- 10
-itermean <- 5
+itermean <- 50
 g_params <- list(fun = "g0", lambda = 1, alpha = 1, cov = invcov_cont)
 time_g0 <- time_run(as.matrix(data_train), var_type, g_params, ngg_params, P0_params, niter, nburn, thin, itermean, nGibbs, thinGibbs)
 g_params <- list(fun = "g1", lambda = 1, alpha = 1, cov = invcov_cont)
@@ -3865,7 +3865,7 @@ rownames(time_Split_0_10) <- c("g0", "g1", "g2", "g3", "ppmx_n", "ppmx_t")
 
 nGibbs <- 0
 thinGibbs <- 5
-itermean <- 5
+itermean <- 50
 g_params <- list(fun = "g0", lambda = 1, alpha = 1, cov = invcov_cont)
 time_g0 <- time_run(as.matrix(data_train), var_type, g_params, ngg_params, P0_params, niter, nburn, thin, itermean, nGibbs, thinGibbs)
 g_params <- list(fun = "g1", lambda = 1, alpha = 1, cov = invcov_cont)
@@ -3948,7 +3948,7 @@ thin <- 1
 
 nGibbs <- 0
 thinGibbs <- 1
-itermean <- 30
+itermean <- 500
 g_params <- list(fun = "g0", lambda = 1, alpha = 1, cov = invcov_cont)
 metrics_0 <- compute_metrics(as.matrix(data_train), clusters_train, var_type, grid_y1, grid_y2,
                              g_params, ngg_params, P0_params, niter, nburn, thin, itermean, nGibbs, thinGibbs,
@@ -3985,7 +3985,7 @@ rownames(comb_Gibbs) <- c("g0", "g1", "g2", "g3", "ppmx_n", "ppmx_t")
 
 nGibbs <- 1
 thinGibbs <- 10
-itermean <- 30
+itermean <- 500
 g_params <- list(fun = "g0", lambda = 1, alpha = 1, cov = invcov_cont)
 metrics_0 <- compute_metrics(as.matrix(data_train), clusters_train, var_type, grid_y1, grid_y2,
                              g_params, ngg_params, P0_params, niter, nburn, thin, itermean, nGibbs, thinGibbs,
@@ -4022,7 +4022,7 @@ rownames(comb_Split_1_10) <- c("g0", "g1", "g2", "g3", "ppmx_n", "ppmx_t")
 
 nGibbs <- 0
 thinGibbs <- 5
-itermean <- 30
+itermean <- 500
 g_params <- list(fun = "g0", lambda = 1, alpha = 1, cov = invcov_cont)
 metrics_0 <- compute_metrics(as.matrix(data_train), clusters_train, var_type, grid_y1, grid_y2,
                              g_params, ngg_params, P0_params, niter, nburn, thin, itermean, nGibbs, thinGibbs,
@@ -4059,7 +4059,7 @@ rownames(comb_Split_0_5) <- c("g0", "g1", "g2", "g3", "ppmx_n", "ppmx_t")
 
 nGibbs <- 0
 thinGibbs <- 10
-itermean <- 30
+itermean <- 500
 g_params <- list(fun = "g0", lambda = 1, alpha = 1, cov = invcov_cont)
 metrics_0 <- compute_metrics(as.matrix(data_train), clusters_train, var_type, grid_y1, grid_y2,
                              g_params, ngg_params, P0_params, niter, nburn, thin, itermean, nGibbs, thinGibbs,
@@ -4099,7 +4099,7 @@ nburn <- 2000
 thinGibbs <- 1
 nGibbs <- 0
 thin <- 1
-itermean <- 5
+itermean <- 50
 g_params <- list(fun = "g0", lambda = 1, alpha = 1, cov = invcov_cont)
 time_g0 <- time_run(as.matrix(data_train), var_type, g_params, ngg_params, P0_params, niter, nburn, thin, itermean, nGibbs, thinGibbs)
 g_params <- list(fun = "g1", lambda = 1, alpha = 1, cov = invcov_cont)
@@ -4120,7 +4120,7 @@ rownames(time_Gibbs) <- c("g0", "g1", "g2", "g3", "ppmx_n", "ppmx_t")
 
 nGibbs <- 1
 thinGibbs <- 10
-itermean <- 5
+itermean <- 50
 g_params <- list(fun = "g0", lambda = 1, alpha = 1, cov = invcov_cont)
 time_g0 <- time_run(as.matrix(data_train), var_type, g_params, ngg_params, P0_params, niter, nburn, thin, itermean, nGibbs, thinGibbs)
 g_params <- list(fun = "g1", lambda = 1, alpha = 1, cov = invcov_cont)
@@ -4140,7 +4140,7 @@ rownames(time_Split_1_10) <- c("g0", "g1", "g2", "g3", "ppmx_n", "ppmx_t")
 
 nGibbs <- 0
 thinGibbs <- 10
-itermean <- 5
+itermean <- 50
 g_params <- list(fun = "g0", lambda = 1, alpha = 1, cov = invcov_cont)
 time_g0 <- time_run(as.matrix(data_train), var_type, g_params, ngg_params, P0_params, niter, nburn, thin, itermean, nGibbs, thinGibbs)
 g_params <- list(fun = "g1", lambda = 1, alpha = 1, cov = invcov_cont)
@@ -4160,7 +4160,7 @@ rownames(time_Split_0_10) <- c("g0", "g1", "g2", "g3", "ppmx_n", "ppmx_t")
 
 nGibbs <- 0
 thinGibbs <- 5
-itermean <- 5
+itermean <- 50
 g_params <- list(fun = "g0", lambda = 1, alpha = 1, cov = invcov_cont)
 time_g0 <- time_run(as.matrix(data_train), var_type, g_params, ngg_params, P0_params, niter, nburn, thin, itermean, nGibbs, thinGibbs)
 g_params <- list(fun = "g1", lambda = 1, alpha = 1, cov = invcov_cont)
@@ -4377,7 +4377,7 @@ nburn <- 2000
 thinGibbs <- 1
 nGibbs <- 0
 thin <- 1
-itermean <- 5
+itermean <- 50
 g_params <- list(fun = "g0", lambda = 1, alpha = 1, cov = invcov_cont)
 time_g0 <- time_run(as.matrix(data_train), var_type, g_params, ngg_params, P0_params, niter, nburn, thin, itermean, nGibbs, thinGibbs)
 g_params <- list(fun = "g1", lambda = 0.5, alpha = 1, cov = invcov_cont)
@@ -4398,7 +4398,7 @@ rownames(time_Gibbs) <- c("g0", "g1", "g2", "g3", "ppmx_n", "ppmx_t")
 
 nGibbs <- 1
 thinGibbs <- 10
-itermean <- 5
+itermean <- 50
 g_params <- list(fun = "g0", lambda = 1, alpha = 1, cov = invcov_cont)
 time_g0 <- time_run(as.matrix(data_train), var_type, g_params, ngg_params, P0_params, niter, nburn, thin, itermean, nGibbs, thinGibbs)
 g_params <- list(fun = "g1", lambda = 0.5, alpha = 1, cov = invcov_cont)
@@ -4418,7 +4418,7 @@ rownames(time_Split_1_10) <- c("g0", "g1", "g2", "g3", "ppmx_n", "ppmx_t")
 
 nGibbs <- 0
 thinGibbs <- 10
-itermean <- 5
+itermean <- 50
 g_params <- list(fun = "g0", lambda = 1, alpha = 1, cov = invcov_cont)
 time_g0 <- time_run(as.matrix(data_train), var_type, g_params, ngg_params, P0_params, niter, nburn, thin, itermean, nGibbs, thinGibbs)
 g_params <- list(fun = "g1", lambda = 0.5, alpha = 1, cov = invcov_cont)
@@ -4438,7 +4438,7 @@ rownames(time_Split_0_10) <- c("g0", "g1", "g2", "g3", "ppmx_n", "ppmx_t")
 
 nGibbs <- 0
 thinGibbs <- 5
-itermean <- 5
+itermean <- 50
 g_params <- list(fun = "g0", lambda = 1, alpha = 1, cov = invcov_cont)
 time_g0 <- time_run(as.matrix(data_train), var_type, g_params, ngg_params, P0_params, niter, nburn, thin, itermean, nGibbs, thinGibbs)
 g_params <- list(fun = "g1", lambda = 0.5, alpha = 1, cov = invcov_cont)
@@ -4537,7 +4537,7 @@ thin <- 1
 
 nGibbs <- 0
 thinGibbs <- 1
-itermean <- 30
+itermean <- 500
 g_params <- list(fun = "g0", lambda = 1, alpha = 1, cov = invcov_cont)
 metrics_0 <- compute_metrics(as.matrix(data_train), clusters_train, var_type, grid_y1, grid_y2,
                              g_params, ngg_params, P0_params, niter, nburn, thin, itermean, nGibbs, thinGibbs,
@@ -4573,7 +4573,7 @@ rownames(comb_Gibbs) <- c("g0", "g1", "g2", "g3", "ppmx_n", "ppmx_t")
 
 nGibbs <- 1
 thinGibbs <- 10
-itermean <- 30
+itermean <- 500
 g_params <- list(fun = "g0", lambda = 1, alpha = 1, cov = invcov_cont)
 metrics_0 <- compute_metrics(as.matrix(data_train), clusters_train, var_type, grid_y1, grid_y2,
                              g_params, ngg_params, P0_params, niter, nburn, thin, itermean, nGibbs, thinGibbs,
@@ -4609,7 +4609,7 @@ rownames(comb_Split_1_10) <- c("g0", "g1", "g2", "g3", "ppmx_n", "ppmx_t")
 
 nGibbs <- 0
 thinGibbs <- 5
-itermean <- 30
+itermean <- 500
 g_params <- list(fun = "g0", lambda = 1, alpha = 1, cov = invcov_cont)
 metrics_0 <- compute_metrics(as.matrix(data_train), clusters_train, var_type, grid_y1, grid_y2,
                              g_params, ngg_params, P0_params, niter, nburn, thin, itermean, nGibbs, thinGibbs,
@@ -4645,7 +4645,7 @@ rownames(comb_Split_0_5) <- c("g0", "g1", "g2", "g3", "ppmx_n", "ppmx_t")
 
 nGibbs <- 0
 thinGibbs <- 10
-itermean <- 30
+itermean <- 500
 g_params <- list(fun = "g0", lambda = 1, alpha = 1, cov = invcov_cont)
 metrics_0 <- compute_metrics(as.matrix(data_train), clusters_train, var_type, grid_y1, grid_y2,
                              g_params, ngg_params, P0_params, niter, nburn, thin, itermean, nGibbs, thinGibbs,
